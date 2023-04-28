@@ -1,29 +1,12 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
 :root {
-  --color-bg: #E0B0FF;
-  --color-text-main: #6bc55b;
-  --color-primary: #FFFF00;
+  --color-bg: #EADDCA;
+  --color-text-main: #000000;
+  --color-primary: #000000;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "Times New Roman";
-  --font-family-header: "Times New Roman";
+  --font-family: "Arial";
+  --font-family-header: "Arial";
 }
 
 /* Basic page style resets */
@@ -36,12 +19,12 @@ to this section's matching END comment to see page-specific styles.
 
 /* Import fonts */
 @font-face {
-  font-family: HK Grotesk;
+  font-family: Arial;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
     format("opentype");
 }
 @font-face {
-  font-family: HK Grotesk;
+  font-family: Arial;
   font-weight: bold;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
@@ -49,7 +32,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our remix on glitch button */
 .btn--remix {
-  font-family: Times New Roman;
+  font-family: Arial;
   padding: 0.75rem 1rem;
   font-size: 1.1rem;
   line-height: 1rem;
@@ -86,7 +69,7 @@ to this section's matching END comment to see page-specific styles.
 
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
+  font-family: Arial;
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
@@ -106,12 +89,8 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
-/******************************************************************************
-END Glitch hello-app default styles
-******************************************************************************/
-
 body {
-  font-family: HK Grotesk;
+  font-family: Arial;
   background-color: var(--color-bg);
 }
 
@@ -119,20 +98,20 @@ body {
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
-  place-items: left;
+  place-items: center;
   margin: 0 1rem;
 }
 .content {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
-  font-family: HK Grotesk;
+  color: #483C32;
+  font-family: Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
@@ -167,29 +146,5 @@ input {
 
 /* Subheading */
 h2 {
-  color: #6bc55b;
-}
-
-/* Interactive image */
-.illustration:active {
-  transform: translateY(5px);
-}
-
-/* Button dip
-- Toggling this class on and off will move it down and up again
-- The button transition property above determines the speed of the translate (500ms)
-*/
-.dipped {
-  transform: translateY(5px);
-}
-
-/* Links that open files in the editor */
-.fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
-  color: var(--color-secondary);
-}
-.fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
+  color: #6F4E37;
 }
